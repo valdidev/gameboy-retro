@@ -5,6 +5,7 @@
 
 body {
     background-color: burlywood;
+    font-family: sans-serif;
 }
 
 #gameboy {
@@ -19,16 +20,16 @@ body {
 
     /* idea: cambiar por textura */
     background-color: #C0BFBB;
-    box-shadow: 5px 5px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
 #gameboy:before {
     position: absolute;
-    
+
     width: 250px;
-    height: 20px;
-    border-bottom: 3px solid #E0E0E0;
-    
+    height: 15px;
+    border-bottom: 4px solid #A6A8A9;
+
     content: '';
 }
 
@@ -36,11 +37,11 @@ body {
     position: absolute;
 
     width: 205px;
-    height: 20px;
+    height: 15px;
     left: 20px;
 
-    border-left: 3px solid #E0E0E0;
-    border-right: 3px solid #E0E0E0;
+    border-left: 4px solid #A6A8A9;
+    border-right: 4px solid #A6A8A9;
 
     content: '';
 }
@@ -48,13 +49,57 @@ body {
 #pantalla {
     position: absolute;
     left: 20px;
-    top: 40px;
+    top: 30px;
 
     width: 210px;
     height: 150px;
 
     background-color: #545561;
-    border-radius: 5px 5px 20px 5px; 
+    border-radius: 5px 5px 25px 5px;
+
+    box-shadow: 1px 1px 1px #333;
+}
+
+#pantalla:before {
+    position: absolute;
+    content: 'DOT MATRIX WITH STEREO SOUND';
+    color: #888;
+    background-color: #545561;
+    font-size: 6px;
+    top: 7px;
+    right: 26px;
+    padding: 0 4px;
+
+    z-index: 50;
+}
+
+#pantalla-verde {
+    position: relative;
+    background-color: #475814;
+    border: 1px solid black;
+    width: 140px;
+    height: 110px;
+    top: 20px;
+    left: 38px;
+    box-shadow: 1px 1px 3px black inset;
+}
+
+#pantalla-verde:before {
+    position: relative;
+    content: '______________________';
+    top: -29px;
+    left: -31px;
+    color: #711451;
+    z-index: 10;
+}
+
+#pantalla-verde:after {
+    position: relative;
+    content: '______________________';
+    top: -26px;
+    left: -227px;
+    color: #181A57;
+    z-index: 10;
 }
 
 /* idea: efecto encendido */
@@ -71,6 +116,14 @@ body {
     box-shadow: 1px 1px 0 #400 inset;
 }
 
+#luz:after {
+    position: relative;
+    content: 'BATTERY';
+    color: #888;
+    font-size: 5px;
+    right: 6px;
+}
+
 #gameboy:hover~#luz {
     background: #f00;
 }
@@ -80,9 +133,8 @@ body {
     position: absolute;
     width: 160px;
     height: 40px;
-    top: 200px;
+    top: 182px;
     left: 20px;
-    font-family: sans-serif;
     font-weight: bold;
     font-size: 8px;
     z-index: 998;
@@ -105,8 +157,8 @@ body {
 
 #cruceta {
     position: absolute;
-    width: 13px;
-    height: 40px;
+    width: 20px;
+    height: 50px;
     top: 250px;
     left: 40px;
     background: #0B0D19;
@@ -116,9 +168,10 @@ body {
 
 #cruceta:before {
     position: absolute;
-    height: 13px;
-    width: 13px;
-    top: 13px;
+    height: 17px;
+    width: 17px;
+    top: 17px;
+    left: 1px;
     border-radius: 100%;
     background-color: #242732;
     z-index: 1000;
@@ -128,10 +181,10 @@ body {
 
 #cruceta:after {
     position: absolute;
-    width: 40px;
-    height: 13px;
-    top: 13px;
-    left: -13px;
+    width: 50px;
+    height: 20px;
+    top: 14px;
+    left: -15px;
     background-color: #0B0D19;
     border-radius: 3px;
     z-index: 999;
@@ -141,55 +194,95 @@ body {
 
 #surcos {
     position: absolute;
-    width: 35px;
-    height: 70px;
-    top: 240px;
-    left: 169px;
+    width: 40px;
+    height: 80px;
+    top: 230px;
+    left: 168px;
     background-color: #B5B4B2;
     border-radius: 18px;
     -webkit-transform: rotate(60deg);
-    
+    content: '';
+}
+
+#surcos:after {
+    position: absolute;
+    height: 33px;
+    width: 1px;
+    top: 53px;
+    left: 99px;
+    border-radius: 2px;
+    background-color: #777;
+    -webkit-transform: rotate(90deg);
+    box-shadow: -30px 0px #777, -15px 0px #777, 15px 0px #777, 30px 0px #777, 45px 0px #777;
     content: '';
 }
 
 #surcos:before {
     position: absolute;
-    height: 31px;
-    width: 3px;
-    top: 30px;
-    left: 110px;
+    height: 40px;
+    width: 5px;
+    top: 48px;
+    left: 100px;
     border-radius: 2px;
-    background-color: #DDD;
+    background-color: #B3B3B3;
     -webkit-transform: rotate(90deg);
-    box-shadow: 7px 0px #DDD,
-        14px 0px #DDD,
-        21px 0px #DDD,
-        28px 0px #DDD,
-        35px 0px #DDD;
-
+    box-shadow: -30px 0px #b3b3b3, -15px 0px #b3b3b3, 15px 0px #b3b3b3, 30px 0px #b3b3b3, 45px 0px #b3b3b3;
     content: '';
 }
 
 #boton-circular {
     position: absolute;
-    width: 22px;
-    height: 22px;
-    top: 271px;
+    width: 32px;
+    height: 32px;
+    top: 263px;
     right: 63px;
     border-radius: 100%;
     background: #A93671;
-    box-shadow: 18px -18px #A93671;
-    -webkit-transform: rotate(15deg);
+    box-shadow: 27px -27px #a93671;
+    -webkit-transform: rotate(16deg);
+}
+
+#ba-texto {
+    position: absolute;
+    bottom: 104px;
+    right: 17px;
+    transform: rotate(-32deg);
+    letter-spacing: 11px;
+    font-size: 11px;
+    font-weight: 800;
+    color: #17207C;
 }
 
 #boton-rectangular {
     position: absolute;
-    height: 25px;
-    width: 6px;
+    height: 30px;
+    width: 8px;
     bottom: 48px;
     left: 89px;
     background: #999;
     border-radius: 3px;
     -webkit-transform: rotate(58deg);
-    box-shadow: 17px -17px #999;
+    box-shadow: 20px -29px #999;
+}
+
+#boton-rectangular:before {
+    position: absolute;
+    content: 'SELECT';
+    bottom: 9px;
+    left: -4px;
+    transform: rotate(-90deg);
+    font-size: 8px;
+    font-weight: 800;
+    color: #17207C;
+}
+
+#boton-rectangular:after {
+    position: absolute;
+    content: 'START';
+    transform: rotate(-90deg);
+    bottom: 39px;
+    left: 19px;
+    font-size: 8px;
+    font-weight: 800;
+    color: #17207C;
 }
