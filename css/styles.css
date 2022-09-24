@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: burlywood;
+}
+
+#gameboy {
+    position: relative;
+    top: 50px;
+
+    margin: 0px auto;
+    height: 400px;
+    width: 250px;
+    border-radius: 10px 10px 50px 10px;
+    /* overflow: hidden; */
+
+    /* idea: cambiar por textura */
+    background-color: #C0BFBB;
+    box-shadow: 5px 5px rgba(0,0,0,0.1);
+}
+
+#gameboy:before {
+    position: absolute;
+    
+    width: 250px;
+    height: 20px;
+    border-bottom: 3px solid #E0E0E0;
+    
+    content: '';
+}
+
+#gameboy:after {
+    position: absolute;
+
+    width: 205px;
+    height: 20px;
+    left: 20px;
+
+    border-left: 3px solid #E0E0E0;
+    border-right: 3px solid #E0E0E0;
+
+    content: '';
+}
+
+#pantalla {
+    position: absolute;
+    left: 20px;
+    top: 40px;
+
+    width: 210px;
+    height: 150px;
+
+    background-color: #545561;
+    border-radius: 5px 5px 20px 5px; 
+}
+
+/* idea: efecto encendido */
+
+#luz {
+    position: relative;
+    margin: 0 auto;
+    height: 5px;
+    width: 5px;
+    top: -250px;
+    left: -90px;
+    border-radius: 100%;
+    background-color: #600;
+    box-shadow: 1px 1px 0 #400 inset;
+}
+
+#gameboy:hover~#luz {
+    background: #f00;
+}
+
+#texto {
+    /* cambiar la fuente */
+    position: absolute;
+    width: 160px;
+    height: 40px;
+    top: 200px;
+    left: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 8px;
+    z-index: 998;
+    color: #17207C;
+}
+
+#nintendo-texto {
+    font-size: 10px;
+    font-weight: 800;
+}
+
+#gb-texto {
+    font-size: 16px;
+    font-style: italic;
+}
+
+#tm-texto {
+    font-size: 7px;
+}
+
+#cruceta {
+    position: absolute;
+    width: 13px;
+    height: 40px;
+    top: 250px;
+    left: 40px;
+    background: #0B0D19;
+    border-radius: 3px;
+    z-index: 998;
+}
+
+#cruceta:before {
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    top: 13px;
+    border-radius: 100%;
+    background-color: #242732;
+    z-index: 1000;
+
+    content: '';
+}
+
+#cruceta:after {
+    position: absolute;
+    width: 40px;
+    height: 13px;
+    top: 13px;
+    left: -13px;
+    background-color: #0B0D19;
+    border-radius: 3px;
+    z-index: 999;
+
+    content: '';
+}
+
+#surcos {
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    top: 240px;
+    left: 169px;
+    background-color: #B5B4B2;
+    border-radius: 18px;
+    -webkit-transform: rotate(60deg);
+    
+    content: '';
+}
+
+#surcos:before {
+    position: absolute;
+    height: 31px;
+    width: 3px;
+    top: 30px;
+    left: 110px;
+    border-radius: 2px;
+    background-color: #DDD;
+    -webkit-transform: rotate(90deg);
+    box-shadow: 7px 0px #DDD,
+        14px 0px #DDD,
+        21px 0px #DDD,
+        28px 0px #DDD,
+        35px 0px #DDD;
+
+    content: '';
+}
+
+#boton-circular {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    top: 271px;
+    right: 63px;
+    border-radius: 100%;
+    background: #A93671;
+    box-shadow: 18px -18px #A93671;
+    -webkit-transform: rotate(15deg);
+}
+
+#boton-rectangular {
+    position: absolute;
+    height: 25px;
+    width: 6px;
+    bottom: 48px;
+    left: 89px;
+    background: #999;
+    border-radius: 3px;
+    -webkit-transform: rotate(58deg);
+    box-shadow: 17px -17px #999;
+}
