@@ -104,6 +104,36 @@ body {
     z-index: 10;
 }
 
+#nintendo-encendido {
+    position: relative;
+
+    width: 140px;
+    height: 110px;
+    top: -90px;
+    left: 39px;
+    overflow: hidden;
+    text-align: center;
+    
+}
+
+#nintendo-logo {
+    position: relative;
+    top: -28px;
+    transition: top 4s;
+    visibility: hidden;
+    
+}
+
+#nintendo-logo-texto {
+    font-family: 'pretendo', sans-serif;
+    
+}
+
+#gameboy:hover #nintendo-logo {
+    top: 50px;
+    visibility: visible;
+}
+
 /* idea: efecto encendido */
 
 #luz {
@@ -128,6 +158,7 @@ body {
 
 #gameboy:hover~#luz {
     background: #f00;
+    transition: all 300ms;
 }
 
 #texto {
