@@ -17,11 +17,7 @@ body {
     height: 400px;
     width: 250px;
     border-radius: 10px 10px 50px 10px;
-    /* overflow: hidden; */
-
-    /* idea: cambiar por textura */
-    /* background-color: #C0BFBB; */
-    background-image: url('../gb-textura.png');
+    background-image: url('../img/gb-textura.png');
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -119,9 +115,8 @@ body {
 #nintendo-logo {
     position: relative;
     top: -28px;
-    transition: top 4s;
-    visibility: hidden;
-    
+    transition: top 4s ease;
+    visibility: hidden;   
 }
 
 #nintendo-logo-texto {
