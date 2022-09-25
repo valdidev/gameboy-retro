@@ -4,7 +4,8 @@
 }
 
 body {
-    background-color: burlywood;
+    height: 100vh;
+    background-image: linear-gradient(to right top, #000000, #240f16, #411325, #601336, #800f48);
     font-family: sans-serif;
 }
 
@@ -19,7 +20,8 @@ body {
     /* overflow: hidden; */
 
     /* idea: cambiar por textura */
-    background-color: #C0BFBB;
+    /* background-color: #C0BFBB; */
+    background-image: url('../gb-textura.png');
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -120,7 +122,7 @@ body {
     position: relative;
     content: 'BATTERY';
     color: #888;
-    font-size: 5px;
+    font-size: 6px;
     right: 6px;
 }
 
@@ -142,53 +144,57 @@ body {
 }
 
 #nintendo-texto {
+    font-family: 'Pretendo', sans-serif;
     font-size: 10px;
+    letter-spacing: 1px;
     font-weight: 800;
 }
 
 #gb-texto {
     font-size: 16px;
+    letter-spacing: -1px;
     font-style: italic;
 }
 
 #tm-texto {
-    font-size: 7px;
+    font-size: 6px;
+    letter-spacing: 1px;
 }
 
 #cruceta {
     position: absolute;
-    width: 20px;
-    height: 50px;
-    top: 250px;
-    left: 40px;
-    background: #0B0D19;
+    width: 24px;
+    height: 65px;
+    top: 235px;
+    left: 41px;
+    background-color: #0B0A16;
+    box-shadow: 1px 1px 1px #7D787C;
     border-radius: 3px;
-    z-index: 998;
+    z-index: 999;
 }
 
 #cruceta:before {
     position: absolute;
-    height: 17px;
-    width: 17px;
-    top: 17px;
-    left: 1px;
+    height: 20px;
+    width: 20px;
+    top: 23px;
+    left: 2px;
     border-radius: 100%;
-    background-color: #242732;
+    background-color: #666;
     z-index: 1000;
-
+    box-shadow: 0px 2px 7px 3px #0b0a16 inset;
     content: '';
 }
 
 #cruceta:after {
     position: absolute;
-    width: 50px;
-    height: 20px;
-    top: 14px;
-    left: -15px;
+    width: 65px;
+    height: 22px;
+    top: 21px;
+    left: -21px;
     background-color: #0B0D19;
     border-radius: 3px;
-    z-index: 999;
-
+    z-index: 800;
     content: '';
 }
 
@@ -198,8 +204,9 @@ body {
     height: 80px;
     top: 230px;
     left: 168px;
-    background-color: #B5B4B2;
+    background-color: #b5b4b2d6;
     border-radius: 18px;
+    box-shadow: 0px 1px 1px 0px #aaa9a6fe inset;
     -webkit-transform: rotate(60deg);
     content: '';
 }
@@ -237,18 +244,19 @@ body {
     top: 263px;
     right: 63px;
     border-radius: 100%;
-    background: #A93671;
-    box-shadow: 27px -27px #a93671;
+    background-color: #800F48;
+    box-shadow: 27px -27px #800F48;
     -webkit-transform: rotate(16deg);
 }
 
 #ba-texto {
+    font-family: 'pretendo', sans-serif;
     position: absolute;
     bottom: 104px;
     right: 17px;
     transform: rotate(-32deg);
     letter-spacing: 11px;
-    font-size: 11px;
+    font-size: 9px;
     font-weight: 800;
     color: #17207C;
 }
@@ -259,10 +267,10 @@ body {
     width: 8px;
     bottom: 48px;
     left: 89px;
-    background: #999;
+    background-color: #6E6E77;
     border-radius: 3px;
     -webkit-transform: rotate(58deg);
-    box-shadow: 20px -29px #999;
+    box-shadow: 20px -29px #6E6E77;
 }
 
 #boton-rectangular:before {
