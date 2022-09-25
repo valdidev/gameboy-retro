@@ -12,7 +12,6 @@ body {
 #gameboy {
     position: relative;
     top: 50px;
-
     margin: 0px auto;
     height: 400px;
     width: 250px;
@@ -23,24 +22,19 @@ body {
 
 #gameboy:before {
     position: absolute;
-
     width: 250px;
     height: 15px;
     border-bottom: 4px solid #A6A8A9;
-
     content: '';
 }
 
 #gameboy:after {
     position: absolute;
-
     width: 205px;
     height: 15px;
     left: 20px;
-
     border-left: 4px solid #A6A8A9;
     border-right: 4px solid #A6A8A9;
-
     content: '';
 }
 
@@ -48,13 +42,10 @@ body {
     position: absolute;
     left: 20px;
     top: 30px;
-
     width: 210px;
     height: 150px;
-
     background-color: #545561;
     border-radius: 5px 5px 25px 5px;
-
     box-shadow: 1px 1px 1px #333;
 }
 
@@ -67,7 +58,6 @@ body {
     top: 7px;
     right: 26px;
     padding: 0 4px;
-
     z-index: 50;
 }
 
@@ -102,34 +92,31 @@ body {
 
 #nintendo-encendido {
     position: relative;
-
     width: 140px;
     height: 110px;
     top: -90px;
     left: 39px;
     overflow: hidden;
     text-align: center;
-    
+
 }
 
 #nintendo-logo {
     position: relative;
     top: -28px;
     transition: top 4s ease;
-    visibility: hidden;   
+    visibility: hidden;
 }
 
 #nintendo-logo-texto {
     font-family: 'pretendo', sans-serif;
-    
+
 }
 
 #gameboy:hover #nintendo-logo {
     top: 50px;
     visibility: visible;
 }
-
-/* idea: efecto encendido */
 
 #luz {
     position: relative;
@@ -157,7 +144,6 @@ body {
 }
 
 #texto {
-    /* cambiar la fuente */
     position: absolute;
     width: 160px;
     height: 40px;
@@ -233,7 +219,7 @@ body {
     background-color: #b5b4b2d6;
     border-radius: 18px;
     box-shadow: 0px 1px 1px 0px #aaa9a6fe inset;
-    -webkit-transform: rotate(60deg);
+    transform: rotate(60deg);
     content: '';
 }
 
@@ -245,7 +231,7 @@ body {
     left: 99px;
     border-radius: 2px;
     background-color: #777;
-    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     box-shadow: -30px 0px #777, -15px 0px #777, 15px 0px #777, 30px 0px #777, 45px 0px #777;
     content: '';
 }
@@ -258,7 +244,7 @@ body {
     left: 100px;
     border-radius: 2px;
     background-color: #B3B3B3;
-    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
     box-shadow: -30px 0px #b3b3b3, -15px 0px #b3b3b3, 15px 0px #b3b3b3, 30px 0px #b3b3b3, 45px 0px #b3b3b3;
     content: '';
 }
@@ -272,7 +258,7 @@ body {
     border-radius: 100%;
     background-color: #800F48;
     box-shadow: 27px -27px #800F48;
-    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
 }
 
 #ba-texto {
@@ -295,7 +281,7 @@ body {
     left: 89px;
     background-color: #6E6E77;
     border-radius: 3px;
-    -webkit-transform: rotate(58deg);
+    transform: rotate(58deg);
     box-shadow: 20px -29px #6E6E77;
 }
 
