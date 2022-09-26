@@ -30,7 +30,7 @@ body {
 
 #gameboy:after {
     position: absolute;
-    width: 205px;
+    width: 202px;
     height: 15px;
     left: 20px;
     border-left: 4px solid #A6A8A9;
