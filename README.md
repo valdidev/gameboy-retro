@@ -1,14 +1,14 @@
-# PROYECTO SEMANA 1 - GeeksHubs
-## Nintendo GameBoy Clásica
+# GeeksHubs - PROJECT - WEEK 1 
+## Nintendo GameBoy Classic 1989
 ![PROYECTOS](https://user-images.githubusercontent.com/96445737/192459347-53e05bc3-6f0b-4bfd-8ee7-984daeb2e7c4.png)
-### DESCRIPCIÓN
+### DESCRIPTION
  - Maquetación de una Nintendo GameBoy.
-### TECNOLOGÍAS
+### TECHNOLOGIES
  - HTML, CSS y JavaScript.
-### FUNCIONALIDAD
- - Pasa el cursor por encima de la consola para que se encienda.
- ![gameboy-on](https://user-images.githubusercontent.com/96445737/192460127-0d869f93-d3dc-4342-b23b-58ca434cfe41.png)
-### LICENCIA DE USO
+### FUNCTIONALITY
+-Hover over the console to make it turn on.
+![gameboy-on](https://user-images.githubusercontent.com/96445737/192460127-0d869f93-d3dc-4342-b23b-58ca434cfe41.png)
+### LICENSE
  - Creative Commons v1.0 Universal
-### AUTOR
+### AUTHOR
  - Fernando Valdivielso - @valdidev
