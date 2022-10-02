@@ -4,9 +4,9 @@
 ### DESCRIPTION
  - Layout of a Nintendo GameBoy.
 ### TECHNOLOGIES
- - HTML, CSS y JavaScript.
+ - HTML, CSS and JavaScript.
 ### FUNCTIONALITY
- - Hover over the console to make it turn on.
+ - Hover over the console to make it turn on
 ### LICENSE
  - Creative Commons v1.0 Universal
 ### AUTHOR
